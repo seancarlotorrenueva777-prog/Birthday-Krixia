@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7bccb" />
+    <meta name="description" content="A little secret birthday world." />
+    <title>A Little Secret</title>
+  </head>
+  <body data-page="entry">
+    <main class="entry-page" id="entryPage">
+      <div class="texture" aria-hidden="true"></div>
+      <div class="soft-vignette" aria-hidden="true"></div>
+
+      <div class="entry-glow glow-one" aria-hidden="true"></div>
+      <div class="entry-glow glow-two" aria-hidden="true"></div>
+      <div class="scrap scrap-two" aria-hidden="true">made with love</div>
+      <div class="scrap scrap-three" aria-hidden="true">✿</div>
+      <div class="secret-orbit orbit-one" aria-hidden="true"></div>
+      <div class="secret-orbit orbit-two" aria-hidden="true"></div>
+      <div class="secret-spark spark-one" aria-hidden="true">✦</div>
+      <div class="secret-spark spark-two" aria-hidden="true">✧</div>
+      <div class="secret-spark spark-three" aria-hidden="true">·</div>
+
+      <svg class="thread-map" id="threadMap" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path id="threadPath" d="" />
+      </svg>
+
+      <section class="secret-stage" aria-label="A hidden interactive scene">
+        <div class="secret-copy">
+          <div class="secret-label">A LITTLE SECRET · 01</div>
+          <div class="whisper">somewhere, a thread is waiting...</div>
+          <div class="chase-instruction" id="chaseInstruction">catch the yarn before it rolls away</div>
+          <div class="chase-progress" id="chaseProgress" aria-hidden="true">THREAD 0 / 5</div>
+        </div>
+
+        <figure class="secret-strawberry-art" id="secretStrawberryArt" aria-hidden="true">
+          <img src="designs/secret-strawberry.png" alt="" decoding="async" />
+          <span class="secret-strawberry-stitch">✿</span>
+        </figure>
+
+        <div class="yarn-wrap" id="yarnWrap">
+          <div class="yarn-ground" aria-hidden="true"></div>
+          <button class="yarn-ball" id="yarnBall" aria-label="Follow the yarn">
+            <span class="yarn-gloss"></span>
+            <span class="yarn-loop loop-a"></span>
+            <span class="yarn-loop loop-b"></span>
+            <span class="yarn-loop loop-c"></span>
+            <span class="yarn-loop loop-d"></span>
+            <span class="yarn-knot"></span>
+          </button>
+          <div class="yarn-tail" id="yarnTail" aria-hidden="true"></div>
+          <div class="tiny-tag" id="tinyTag" aria-hidden="true">catch me ✦</div>
+        </div>
+
+        <div class="entry-footer" aria-hidden="true">
+          <span>✿</span>
+          <span>🧶</span>
+          <span>✿</span>
+        </div>
+      </section>
+
+      <div class="secret-status" id="secretStatus" aria-live="polite"></div>
+      <div class="transition-wash" id="transitionWash" aria-hidden="true"></div>
+      <div class="transition-thread" id="transitionThread" aria-hidden="true"><span class="transition-thread-knot"></span></div>
+    </main>
+
+    <script type="module" src="src/main.ts"></script>
+  </body>
+</html>
